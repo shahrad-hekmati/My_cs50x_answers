@@ -1,0 +1,3 @@
+According to the last method we used we found the 3 option which was danceability, energy and valene we could only find energy and danceability above 60%
+
+It is not 100% accurete,however this will seperate even the potential candidates for us but as mentioned earlier it's not accurete.
