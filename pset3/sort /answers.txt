@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: it had the worst performence in speed of sorting
+
+sort2 uses: Merge Sort
+
+How do you know?: it had the best performence in speed of sorting
+
+sort3 uses: Selection Sort
+
+How do you know?: it was on the middle performence wise it was not the best or the worst one
