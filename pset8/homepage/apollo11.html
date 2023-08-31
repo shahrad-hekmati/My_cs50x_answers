@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apollo 11 Mission</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0; /* Reset default margin */
+            padding: 0; /* Reset default padding */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Set the minimum height of the body to 100% of viewport height */
+            background-image: url('apollo11-social-1200x628.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            flex: 1; /* Allow the container to grow and fill the remaining space */
+            margin-top: 80px;
+        }
+
+        .footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="index.html">NASA Missions</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="missionsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Missions
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="missionsDropdown">
+                        <a class="dropdown-item" href="apollo11.html">Apollo 11</a>
+                        <a class="dropdown-item" href="hubble.html">Hubble Space Telescope</a>
+                        <a class="dropdown-item" href="space-shuttle.html">The Space Shuttle</a>
+                        <a class="dropdown-item" href="jameswebb.html">James Webb Space Telescope</a>
+                        <!-- Add more mission links here -->
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Apollo 11 Mission</h1>
+        <img src="apollo11-logo.jpeg" alt="Apollo 11 Logo" class="img-fluid mission-image">
+        <section class="mission-section">
+            <h2>Preparation and Launch</h2>
+            <p>The Apollo 11 mission, launched on July 16, 1969, marked a historic milestone in human exploration. The spacecraft was equipped with cutting-edge technology and meticulously planned procedures to ensure the astronauts' safety and mission success. The launch from Kennedy Space Center captivated the world and ignited the dream of reaching the moon.</p>
+            <img src="apollo11-launch.gif" alt="Apollo 11 Launch" class="img-fluid" style="width: 100%;">
+        </section>
+
+        <section class="mission-section">
+            <h2>Lunar Landing</h2>
+            <p>On July 20, 1969, Neil Armstrong and Edwin "Buzz" Aldrin became the first humans to set foot on the lunar surface, while Michael Collins orbited above in the command module. The lunar module, Eagle, separated from the command module, Columbia, and descended to the moon's surface. Armstrong's iconic words, "That's one small step for [a] man, one giant leap for mankind," echoed across the globe.</p>
+            <img src="apollo11-landing.gif" alt="Apollo 11 Lunar Landing" class="img-fluid" style="width: 100%;">
+        </section>
+
+        <section class="mission-section">
+            <h2>Return to Earth</h2>
+            <p>After spending approximately 21 hours on the lunar surface, Armstrong and Aldrin rejoined Collins in the command module. The module's engines fired, propelling the crew out of lunar orbit and back toward Earth. The successful reentry and splashdown in the Pacific Ocean on July 24, 1969, marked the triumphant conclusion of the historic Apollo 11 mission, inspiring generations to come.</p>
+            <img src="back-to-earth.gif" alt="Apollo 11 back-to-earth" class="img-fluid" style="width: 100%;">
+        </section>
+
+        <section class="mission-section">
+            <h2>Apollo Mission spots on the Moon</h2>
+            <p>The captivating image reveals the moon's surface as seen from Earth, adorned with historical significance. Highlighting Apollo mission landing spots, each mark represents humanity's triumphant steps on lunar soil. Apollo 11's iconic "Eagle" rests where Neil Armstrong and Buzz Aldrin first ventured in 1969, a testament to audacious achievement. Nearby, Apollo 17's "Challenger" denotes the last human mission to the moon. This image, both a homage to past explorations and an inspiration for future endeavors, immortalizes our lunar exploration legacy against the vast cosmic canvas, reminding us of the boundless possibilities that await us beyond our home planet.</p>
+            <img src="apollo-spots.jpg" alt="apollo-spots" class="img-fluid" style="width: 100%;">
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 NASA Missions | Designed by <a href="https://www.linkedin.com/in/shahrad-hekmati-683432215/">Shahrad Hekmati Farid</a></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
