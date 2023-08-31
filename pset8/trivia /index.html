@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Trivia!</title>
+    <script>
+        // TODO: Add code to check answers to questions
+        function corChecker(correct, element) {
+            var message = correct ? "Awesome!🎉🎉🎉" : "You should think twice.🤔";
+            document.getElementById(element).innerHTML = message;
+        }
+
+        function resetBtn() {
+            var btns = document.querySelectorAll(".button");
+            btns.forEach(function (btn) {
+                btn.classList.remove("incorrect");
+                btn.classList.remove("correct");
+            });
+        }
+
+        function answerGet(event) {
+            resetBtn();
+            var clickedButton = event.target;
+
+            if (clickedButton.id === "correct") {
+                clickedButton.classList.add('correct');
+                corChecker(true, "mlu");
+            } else {
+                clickedButton.classList.add("incorrect");
+                corChecker(false, "mlu");
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function (event) {
+            var btns = document.querySelectorAll(".button");
+            btns.forEach(function (btn) {
+                btn.addEventListener("click", answerGet);
+            });
+
+            var inputField = document.querySelector("input");
+            var checkButton = document.querySelector("#check");
+
+            checkButton.addEventListener("click", function(evt) {
+                if (inputField.value.toLowerCase() !== "batman") {
+                    corChecker(false, "re");
+                } else {
+                    corChecker(true, "re");
+                }
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>Trivia!</h1>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>Part 1: Multiple Choice </h2>
+            <hr>
+            <!-- TODO: Add multiple choice question here -->
+            <h4>Which university is the best in the world?</h4>
+            <h3 id="mlu"></h3>
+            <button id="incorrect" class="button">MIT</button>
+            <button id="incorrect" class="button">Princeton</button>
+            <button id="correct" class="button">Harvard</button>
+            <button id="incorrect" class="button">Caltech</button>
+        </div>
+
+        <div class="section">
+            <h2>Part 2: Free Response</h2>
+            <hr>
+            <!-- TODO: Add free response question here -->
+            <h3>Do you know who is the best super hero of all time?</h3>
+            <h2 id="re"></h2>
+            <input type="text">
+            <button id="check" class="input">Check!</button>
+        </div>
+    </div>
+</body>
+</html>
